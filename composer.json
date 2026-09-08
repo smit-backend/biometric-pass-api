@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/biometric-pass-api",
+    "description": "Cryptographically secure API wrapper validating public key biometric challenge tokens transmitted from Flutter/React Native.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\BioGate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\BioGate\\PackageServiceProvider"
+            ]
+        }
+    }
+}
